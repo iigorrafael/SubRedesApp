@@ -27,9 +27,9 @@
         android:layout_height="wrap_content"
         android:text="Calcular" />
 
-    <!--<ListView-->
-       <!--android:id="@+id/listViewTables"-->
-       <!--android:layout_width="wrap_content"-->
-       <!--android:layout_height="wrap_content"></ListView>-->
+    <ListView
+       android:id="@+id/listViewTables"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"></ListView>
 
 </LinearLayout>

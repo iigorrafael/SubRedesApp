@@ -2,4 +2,7 @@
     <string name="app_name">Subredes</string>
     <string name="btn_calcular">Calcular</string>
     <string name="porra">Calcular</string>
+    <string name="ipInvalido">Endereço IP inválido: </string>
+    <string name="mascaraInvalida">Mascara sub-rede inválida : </string>
+    <string name="fistByteMascara">O primeiro byte da mascara deve ser 255: </string>
 </resources>
