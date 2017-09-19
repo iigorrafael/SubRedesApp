@@ -6,10 +6,19 @@ package br.com.igor.subredesapp.model;
 
 public class Subrede {
 
+    private String nome;
     private String endRede;
     private String firstHost;
     private String lastHost;
     private String broadcast;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
     public String getEndRede() {
         return endRede;

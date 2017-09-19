@@ -25,7 +25,11 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calcular" />
+        android:text="Calcular"
+        android:backgroundTint="#304FFE"
+        app:backgroundTint="#304FFE"
+        android:textColor="#FFFFFF"
+        android:onClick="calcular"/>
 
     <ListView
        android:id="@+id/listViewTables"

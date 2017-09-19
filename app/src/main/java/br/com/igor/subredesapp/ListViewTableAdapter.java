@@ -54,15 +54,27 @@ public class ListViewTableAdapter extends BaseAdapter {
         Subrede subrede = subRedes.get(position);
 
         if(subrede != null){
+            TextView textViewNome = (TextView) view.findViewById(R.id.textViewNome);
             TextView textViewRedeIP = (TextView) view.findViewById(R.id.textViewRedeIP);
             TextView textViewFistIP = (TextView) view.findViewById(R.id.textViewPrimeiroHostIP);
             TextView textViewLastIP = (TextView) view.findViewById(R.id.textViewUltimoHostIP);
-            TextView textViewBroadcast = (TextView) view.findViewById(R.id.textViewBroadcastIP);
+            TextView textViewBroadcastIP = (TextView) view.findViewById(R.id.textViewBroadcastIP);
 
+            TextView textViewRede = (TextView) view.findViewById(R.id.textViewRede);
+            TextView textViewFist = (TextView) view.findViewById(R.id.textViewPrimeiroHost);
+            TextView textViewLast = (TextView) view.findViewById(R.id.textViewUltimoHost);
+            TextView textViewBroadcast = (TextView) view.findViewById(R.id.textViewBroadcast);
+
+            textViewNome.setText(subrede.getNome());
             textViewRedeIP.setText(subrede.getEndRede());
             textViewFistIP.setText(subrede.getFirstHost());
             textViewLastIP.setText(subrede.getLastHost());
-            textViewBroadcast.setText(subrede.getBroadcast());
+            textViewBroadcastIP.setText(subrede.getBroadcast());
+
+            textViewRede.setText("Rede: ");
+            textViewFist.setText("Primeiro IP: ");
+            textViewLast.setText("Ultimo IP: ");
+            textViewBroadcast.setText("Broadcast");
 
         }
 
